@@ -40,6 +40,7 @@ const CommentSchema = new Schema(
       default: Date.now,
       get: createdAtVal => dateFormat(createdAtVal)
     },
+    // use ReplySchema to validate data for a reply
     replies: [ReplySchema]
   },
   {
@@ -51,7 +52,6 @@ const CommentSchema = new Schema(
   }
 );
 
-// get total count of comments and replies on retrieval
 CommentSchema.virtual('replyCount').get(function() {
   return this.replies.length;
 });
