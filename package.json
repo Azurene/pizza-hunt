@@ -13,5 +13,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azurene/pizza-hunt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Azurene/pizza-hunt/issues"
+  },
+  "homepage": "https://github.com/Azurene/pizza-hunt#readme"
 }
